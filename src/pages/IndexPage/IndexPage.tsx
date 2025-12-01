@@ -1,4 +1,4 @@
-import { Section, Cell, Image, List } from '@telegram-apps/telegram-ui';
+import { Avatar, Section, Cell, Image, List } from '@telegram-apps/telegram-ui';
 import type { FC } from 'react';
 
 import { Link } from '@/components/Link/Link.tsx';
@@ -12,6 +12,18 @@ export const IndexPage: FC = () => {
     <Page back={false}>
       <List>
         <Section
+          header="Services"
+          footer="Access Paxyo digital services platform"
+        >
+          <Link to="/paxyo">
+            <Cell
+              subtitle="Virtual numbers, social media boost, subscriptions & more"
+            >
+              Paxyo Services
+            </Cell>
+          </Link>
+        </Section>
+        <Section
           header="Features"
           footer="You can use these pages to learn more about features, provided by Telegram Mini Apps and other useful projects"
         >
@@ -21,6 +33,10 @@ export const IndexPage: FC = () => {
               subtitle="Connect your TON wallet"
             >TON
               <InitDataPage />
+              <Avatar
+                size={96}
+                src="https://avatars.githubusercontent.com/u/84640980?v=4"
+              />
             </Cell>
           </Link>
         </Section>
@@ -35,6 +51,9 @@ export const IndexPage: FC = () => {
             <Cell subtitle="Platform identifier, Mini Apps version, etc.">Launch Parameters</Cell>
           </Link>
           <Link to="/theme-params">
+            <Cell subtitle="Telegram application palette information">Theme Parameters</Cell>
+          </Link>
+          <Link to="/about">
             <Cell subtitle="Telegram application palette information">Theme Parameters</Cell>
           </Link>
         </Section>
