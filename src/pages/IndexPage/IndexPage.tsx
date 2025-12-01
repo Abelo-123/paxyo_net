@@ -19,7 +19,7 @@ export const IndexPage: FC = () => {
             <Cell
               subtitle="Virtual numbers, social media boost, subscriptions & more"
             >
-              Paxyo Services
+              Paxyo Sservices
             </Cell>
           </Link>
         </Section>
