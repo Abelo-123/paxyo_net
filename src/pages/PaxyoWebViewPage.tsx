@@ -4,7 +4,7 @@ import './PaxyoWebView.css';
 
 export const PaxyoWebViewPage: FC = () => {
   return (
-    <Page back={true}>
+    <Page back={false}>
       <div className="webview-container">
         <iframe
           src="https://paxyo.com"

@@ -16,8 +16,8 @@ interface Route {
 }
 
 export const routes: Route[] = [
-  { path: '/', Component: IndexPage },
-  { path: '/paxyo', Component: PaxyoWebViewPage, title: 'Paxyo Services' },
+  { path: '/', Component: PaxyoWebViewPage, title: 'Paxyo Services' },
+  { path: '/menu', Component: IndexPage, title: 'Menu' },
   { path: '/init-data', Component: InitDataPage, title: 'Init Data' },
   { path: '/theme-params', Component: ThemeParamsPage, title: 'Theme Params' },
   { path: '/launch-params', Component: LaunchParamsPage, title: 'Launch Params' },
