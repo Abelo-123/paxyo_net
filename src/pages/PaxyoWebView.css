@@ -1,6 +1,6 @@
 .webview-container {
   width: 100%;
-  height: calc(100vh - 60px);
+  height: 100vh;
   position: relative;
   overflow: hidden;
   background: var(--tgui--bg_color, #ffffff);
