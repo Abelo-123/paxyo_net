@@ -8,7 +8,7 @@ export const PaxyoWebViewPage: FC = () => {
   const initData = launchParams?.initDataRaw as string | undefined;
 
   // Construct the URL with the Telegram data
-  // We point to telegram_auth.php which will handle the login and then redirect to smm.php
+  // We point to telegram_auth.php which wfill handle the login and then redirect to smm.php
   const webViewUrl = `https://paxyo.com/telegram_auth.php?tg_data=${encodeURIComponent(initData || '')}`;
 
   return (
