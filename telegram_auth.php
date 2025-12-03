@@ -12,6 +12,7 @@ if (empty($tg_data_raw)) {
 // Parse the query string into an array
 parse_str($tg_data_raw, $auth_data);
 
+echo "<!DOCTYPE html><html><head><meta name='viewport' content='width=device-width, initial-scale=1'></head><body style='background-color: white; color: black; font-family: sans-serif;'>";
 echo "<h1>Received Telegram Data</h1>";
 echo "<pre>";
 print_r($auth_data);
@@ -24,4 +25,5 @@ if (isset($auth_data['user'])) {
     print_r($user_data);
     echo "</pre>";
 }
+echo "</body></html>";
 ?>
