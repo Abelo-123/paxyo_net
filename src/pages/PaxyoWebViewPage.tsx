@@ -20,6 +20,11 @@ export const PaxyoWebViewPage: FC = () => {
   return (
     <Page back={false}>
       <div className="webview-container">
+        <div style={{ padding: '10px', background: '#eee', color: '#000', fontSize: '10px', wordBreak: 'break-all' }}>
+          <strong>Debug URL:</strong> {webViewUrl}
+          <br />
+          <strong>InitData Length:</strong> {initData?.length}
+        </div>
         <iframe
           src={webViewUrl}
           className="webview-iframe"
